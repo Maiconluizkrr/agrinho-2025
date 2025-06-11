@@ -5,6 +5,7 @@ body {
   padding: 0;
 }
 
+/* HEADER */
 header {
   background-color: #1f9121;
   color: white;
@@ -19,6 +20,15 @@ header {
   margin-right: 10px;
 }
 
+#menu-toggle {
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+  color: white;
+}
+
 h1 {
   font-size: 2em;
   font-weight: bold;
@@ -29,11 +39,21 @@ h1 .verde {
   font-style: italic;
 }
 
+/* NAVIGATION */
 nav {
-  background-color: #76ff03;
-  padding: 10px 0;
+  transition: left 0.3s ease;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
   width: 160px;
-  float: left;
+  background-color: #76ff03;
+  padding-top: 60px;
+  z-index: 10;
+}
+
+nav.closed {
+  left: -180px;
 }
 
 nav ul {
@@ -43,7 +63,6 @@ nav ul {
 }
 
 nav ul li {
-  background-color: rgba(0, 0, 0, 0.1);
   margin: 5px 0;
 }
 
@@ -55,9 +74,15 @@ nav ul li a {
   padding: 10px;
 }
 
+/* MAIN CONTENT */
 main {
   margin-left: 180px;
   padding: 20px;
+  transition: margin-left 0.3s ease;
+}
+
+nav.closed + main {
+  margin-left: 20px;
 }
 
 .imagem-principal {
@@ -85,6 +110,7 @@ main {
   margin-left: 20px;
 }
 
+/* FOOTER */
 footer {
   background-color: #1f9121;
   color: black;

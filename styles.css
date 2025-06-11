@@ -17,7 +17,8 @@ header {
 }
 
 .logo-img {
-  height: 50px;
+  height: 100px;
+  padding-left: 50%;
 }
 
 #menu-toggle {

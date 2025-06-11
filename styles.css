@@ -15,12 +15,6 @@ header {
   padding: 10px 20px;
   border-bottom: 2px solid #1f9121;
 }
-
-.logo-img {
-  height: 100px;
-  padding-left: 40%;
-}
-
 #menu-toggle {
     width: 0px;
     padding-right: auto;
@@ -30,6 +24,13 @@ header {
   color: #1f9121;
   cursor: pointer;
 }
+
+.logo-img {
+  height: 100px;
+  padding-left: 40%;
+}
+
+
 
 /* MENU */
 #side-menu {
